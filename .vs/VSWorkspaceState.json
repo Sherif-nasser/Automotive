@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\landing-page",
+    "\\src\\app\\layouts",
+    "\\src\\app\\layouts\\header"
+  ],
+  "SelectedNode": "\\src\\app\\landing-page\\landing-page.component.ts",
+  "PreviewInSolutionExplorer": false
+}

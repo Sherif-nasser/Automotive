@@ -1,0 +1,42 @@
+.image-container{
+    position:relative;
+    top:0%;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .image-container h1{
+    position: absolute;
+    top: 39%;
+    left: 25%;
+    right: 28%;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .content{
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.37;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    width:80%;
+    margin-bottom:20%;
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px){ 
+    .image-container h1{
+      font-size: 30px;
+    }
+   }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .image-container h1{
+      font-size: 40px;
+    }
+  }

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+.navbar {
+  background-color: rgba(0, 0, 0, 0.50);
+  z-index:99;
+  margin:0% !important;
+  padding: 0% !important;
+  position:absolute;
+  top: 0%;
+  width:100%;
+}
+
+.img-fluid{
+  height: 1%;
+  width: 9%;
+}
+
+.collapse ul li a{
+ color: white;
+ font-size: 13px;
+ font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/21400dc679986534519c638136d62dbf?family=Rage+Italic');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+
+.image-container{
+  position:relative;
+  top:0%;
+  align-content: center;
+  align-items: center;
+}
+
+.image-container h1{
+  position: absolute;
+  top: 39%;
+  left: 25%;
+  right: 28%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+
+.container img{
+  max-width: 60%;
+}
+
+/* LABLES STARTS */
+
+
+
+ #background-text{
+  position: absolute;
+  font-family: 'Rage';
+  font-size: 4.2rem;
+  opacity: 0.20;
+  line-height: 1rem;
+
+}
+
+.technical-arm p{
+  font-family: 'Open Sans', sans-serif;
+  color: #1a60a8;
+  font-size: 29px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.34;
+}
+
+.container-fluid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.see-more{
+margin-top: 2%;
+}
+
+.see-more .rounded{
+  width: 15% !important;
+  height: 80% !important;
+}
+
+.content{
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.37;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .image-container h1{
+    font-size: 30px;
+  }
+
+  #background-text{
+    font-size: 3.2rem;
+  }
+
+  .head{
+    font-size: 30px !important;
+  }
+  .see-more{
+    width: 100%;
+    height: 20%;
+    margin-top: 4%;
+  }
+  .content{
+    line-height:1.1rem;
+    font-size: 15px;
+  }
+
+  .technical-arm p{
+    font-size:20px;
+  }
+}
+
+
+
+

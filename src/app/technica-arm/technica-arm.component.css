@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300;1,400&display=swap');
+
+.image-container{
+  position:relative;
+  top:0%;
+  align-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.head{
+  font-size: 30px !important;
+  margin-bottom: 7%;
+}
+
+#background-text{
+  position: absolute;
+  font-family: 'Rage';
+  font-size: 4.2rem;
+  opacity: 0.20;
+  line-height: 1rem;
+
+}
+
+.product-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom:7%;
+}
+
+.discreption{
+  width:80%;
+  align-items: center;
+  margin: auto;
+}
+
+.discreption h3{
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.discreption p{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  line-height: 1.37;
+  font-weight: 600;
+}
+
+.hamburger{
+  position: absolute;
+  left: 0;
+  margin-left:2px;
+
+}
+
+.active{
+  transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+#background-text{
+  font-size: 3.2rem;
+}
+}
