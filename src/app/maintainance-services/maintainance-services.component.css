@@ -18,8 +18,7 @@
   font-family: 'Rage';
   font-size: 4.2rem;
   opacity: 0.20;
-  line-height: 1rem;
-
+  line-height: 2rem;
 }
 
 .product-container{
@@ -31,36 +30,166 @@
 
 .discreption{
   width:80%;
-  align-items: center;
   margin: auto;
 }
 
 .discreption h3{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
 }
+
+
 
 .discreption p{
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
   line-height: 1.37;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .hamburger{
   position: absolute;
   left: 0;
   margin-left:2px;
+  width: 40%;
+}
 
+.hiddenInformation{
+  display:flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 100px;
+  height: 50%;
+  width:0%;
+}
+
+.showInfo{
+  width:61%;
+  visibility:visible;
+  transition: width 0.5s;
+}
+
+.showInfo  p{
+  width:61%;
+  display:block !important;
+  transition: width 0.5s;
+}
+
+
+
+.hiddenInformation img{
+  width:18%;
 }
 
 .active{
-  transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+  transform: rotate(1deg); /* Equal to rotateZ(45deg) */
+  transition-duration: 0.4s;
 }
+
+.active2{
+  transform: rotate(-180deg); /* Equal to rotateZ(45deg) */
+  transition-duration: 0.4s;
+}
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
 #background-text{
   font-size: 3.2rem;
 }
+.product-container img{
+  width: 25% !important;
+}
+
+}
+
+
+@media (min-width: 540px) and (max-width: 768px) {
+
+  #background-text{
+    font-size: 2.2rem;
+  }
+
+  .smallImg{
+    display:block !important;
+    margin:auto;
+
+  }
+
+  .largImg{
+    display: none;
+    width:28px !important;
+  }
+
+  .discreption {
+    justify-content: center;
+  }
+
+  .product-container img{
+   width: 25% !important;
+  }
+
+  .discreption h3{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .discreption p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .product-container{
+    justify-content: center;
+  }
+}
+
+
+@media (min-width: 280px) and (max-width: 540px){
+
+  #background-text{
+    font-size: 1.2rem;
+    line-height: 29px;
+  }
+
+  .head{
+    font-size: 21px !important;
+  }
+
+  .smallImg{
+    display:block !important;
+    margin:auto;
+
+  }
+
+  .largImg{
+    display: none;
+    width:28px !important;
+  }
+
+  .discreption {
+    justify-content: center;
+  }
+
+  .product-container img{
+   width: 30% !important;
+  }
+
+  .discreption h3{
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .discreption p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .product-container{
+    justify-content: center;
+  }
+
 }

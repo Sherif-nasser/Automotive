@@ -63,4 +63,93 @@
 #background-text{
   font-size: 3.2rem;
 }
+
+
+
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+
+  #background-text{
+    font-size: 2.2rem;
+  }
+
+  .smallImg{
+    display:block !important;
+    margin:auto;
+  
+  }
+
+  .largImg{
+    display: none;
+    width:28px !important;
+  }
+
+  .discreption {
+    justify-content: center;
+  }
+
+  .product-container img{
+   width: 25% !important;
+  }
+
+  .discreption h3{
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .discreption p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .product-container{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 540px){
+
+  #background-text{
+    font-size: 1.2rem;
+    line-height: 29px;
+  }
+
+  .head{
+    font-size: 21px !important;
+  }
+
+  .smallImg{
+    display:block !important;
+    margin:auto;
+  
+  }
+
+  .largImg{
+    display: none ;
+    width:28px !important;
+  }
+
+  .discreption {
+    justify-content: center;
+  }
+
+  .product-container img{
+   width: 30% !important;
+  }
+
+  .discreption h3{
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .discreption p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .product-container{
+    justify-content: center;
+  }
+
 }

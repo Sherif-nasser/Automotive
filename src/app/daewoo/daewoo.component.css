@@ -28,10 +28,12 @@
     margin-bottom:20%;
   }
   
-  @media (min-width: 576px) and (max-width: 768px){ 
+  @media (min-width: 540px) and (max-width: 768px){ 
     .image-container h1{
       font-size: 30px;
     }
+  
+  
    }
   
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -39,4 +41,20 @@
     .image-container h1{
       font-size: 40px;
     }
+  }
+  
+  @media (min-width: 280px) and (max-width: 540px){
+  
+    .image-container h1{
+      font-size: 22px;
+    }
+  
+    .head{
+      font-size: 30px !important;
+    }
+  
+  .container img{
+    width:57% !important;
+  }
+  
   }

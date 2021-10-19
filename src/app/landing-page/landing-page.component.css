@@ -2,17 +2,35 @@
 @import url('//db.onlinewebfonts.com/c/21400dc679986534519c638136d62dbf?family=Rage+Italic');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 
+.carus {
+  padding:0%;
+  margin-bottom: 5%;
+}
+
 
 .image-container{
   position:relative;
   top:0%;
   align-content: center;
   align-items: center;
+  padding: 0%;
+  height:710px;
 }
+
+ .picsum-img-wrapper{
+  height:700px;
+}
+
+.picsum-img-wrapper img{
+  height:100%;
+}
+
+/* .carousel-indicators li{background-color: black;} */
+
 
 .image-container h1{
   position: absolute;
-  top: 39%;
+  top: 50%;
   left: 25%;
   right: 28%;
   font-family: 'Open Sans', sans-serif;
@@ -20,6 +38,7 @@
   text-align: center;
   color: white;
   font-size: 60px;
+  overflow: hidden;
 }
 
 
@@ -71,10 +90,51 @@ margin-top: 2%;
   font-family: 'Open Sans', sans-serif;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
 
+.picsum-img-wrapper img{
+  width:100%;
+}
+
+.smallImg .name{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  color: #000;
+  margin:auto;
+}
+
+.smallImg .WASHER{
+  margin-right:15%;
+}
+.smallImg .DISH-WASHER{
+  margin-right:10%;
+}
+.smallImg .MICROWAVE{
+  margin-left:12%;
+}
+
+.smallImg .DRYER{
+  margin-left:20%;
+}
+
+.technical-arm img:hover{
+  cursor:pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .image-container{
+    height: 489px;
+  }
   .image-container h1{
     font-size: 30px;
+  }
+
+  .picsum-img-wrapper{
+    height:489px;
   }
 
   #background-text{
@@ -85,20 +145,166 @@ margin-top: 2%;
     font-size: 30px !important;
   }
   .see-more{
-    width: 100%;
-    height: 20%;
+    width: 100% !important;
+    height: 20% !important;
     margin-top: 4%;
   }
   .content{
     line-height:1.1rem;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .technical-arm p{
     font-size:20px;
   }
+  .container img{
+    max-width: 71%;
+  }
+  .smallImg .WASHER{
+    margin-right:15%;
+  }
+  .smallImg .DISH-WASHER{
+    margin-right:7%;
+  }
+  .smallImg .MICROWAVE{
+    margin-left:11%;
+  }
+
+  .smallImg .DRYER{
+    margin-left:20%;
+  }
 }
 
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .image-container h1{
+    font-size: 21px;
+  }
+
+  .image-container{
+    height: 376px;
+  }
+
+  .picsum-img-wrapper{
+    height:376px;
+  }
+
+  #background-text{
+    font-size: 2.2rem;
+  }
+
+
+  .head{
+    font-size: 26px !important;
+  }
+
+  .content{
+    line-height:1.33;
+    font-size: 13px;
+  }
+
+  .see-more .rounded{
+    width: 30% !important;
+    height: 65% !important;
+    margin-top: 0;
+  }
+
+  .technical-arm{
+    height: auto !important;
+  }
+
+  .technical-arm p{
+    font-size:17px;
+  }
+
+  .companyImg{
+    padding:0% !important;
+  }
+
+  .smallImg{
+    justify-content: center !important;
+  }
+
+  .container img{
+    max-width: 48%;
+  }
+
+  .container-fluid{
+    height: auto !important;
+  }
+
+  .technical-arm img{
+    max-width: 48% !important;
+  }
+
+  .container img{
+    max-width: 34%;
+  }
+  .smallImg .name{
+    margin:0% !important;
+  }
+}
+
+
+
+@media (min-width: 280px) and (max-width: 540px){
+
+  .image-container h1{
+    font-size: 12px;
+  }
+  #background-text{
+    font-size: 1.2rem;
+    line-height: 29px;
+  }
+
+  .image-container{
+    height: 291px;
+  }
+
+  .picsum-img-wrapper{
+    height:300px;
+  }
+  .picsum-img-wrapper img{
+    height:96%;
+  }
+
+  .see-more .rounded{
+    width: 48% !important;
+
+  }
+
+  .companyImg{
+    padding:0% !important;
+  }
+
+  .technical-arm img{
+    max-width: 50%;
+  }
+
+
+  .technical-arm p{
+    display: none;
+  }
+
+  .container-fluid{
+    height: auto !important;
+  }
+  .head{
+    font-size: 21px !important;
+  }
+  .smallImg{
+    justify-content: center !important;
+  }
+
+  .container img{
+    max-width: 35%;
+  }
+
+  .smallImg .name{
+    margin:0% !important;
+    font-size:68%;
+  }
+}
 
 
 

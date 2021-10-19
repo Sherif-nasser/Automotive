@@ -2,42 +2,61 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
+
     <img src="../../../assets/automotive assets/landing page/1.png" class="img-fluid offset-lg-1 offset-md-1 offset-sm-1" alt="Logo">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler" type="button"
+  data-toggle="collapse"
+  data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent" aria-expanded="false"
+  aria-label="Toggle navigation"
+  [ngClass]="isRotated? 'activation': 'active2'"
+  (click)= "rotation()"
+  >
+    <span class="navbar-toggler-icon" ></span>
   </button>
 
-  <div class="collapse navbar-collapse justify-content-lg-end mr-lg-5" id="navbarSupportedContent">
 
-    <ul class="nav navbar-nav navbar-right">
+  <div class=" navbar-collapse justify-content-lg-end mr-lg-5"
+  id="navbarSupportedContent"
+  [ngClass]="clickable? 'collapse': ''"
+  >
+
+    <ul class="navbar-nav navbar-right">
       <li class="nav-item active">
-        <a class="nav-link" href="#">HOME </a>
+        <a class="nav-link" href="#">{{'home' | translate}} <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/aboutus">ABOUT US</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/maintainance">SERVICES</a>
+        <a class="nav-link" routerLink="/aboutus" >{{"aboutUs"|translate}}</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">BRANDS</a>
+        <a class="nav-link" routerLink="/maintainance" >{{"services" | translate}}</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">CONTACT US</a>
+        <a class="nav-link" href="#Brands">{{"brands" | translate }}</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" >{{"contactUs" |translate}}</a>
       </li>
 
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">AR</a>
+      <li class="nav-item" *ngFor="let button of buttons">
+        <button mat-button [ngClass]="{'mat-raised-button ':isButtonSelected(button)}" (click)="switchButton(button)"
+        class="nav-link arabic" style="text-decoration: none;background-color: transparent;border:none;color:white; "
+        >
+        {{button}}
+      </button>
+   
       </li>
     </ul>
   </div>
-  </div>
+
 </nav>
+
+
+
 
 
 

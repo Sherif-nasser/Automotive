@@ -16,9 +16,11 @@ import {NorgeComponent} from './norge/norge.component';
 import {SamsungComponent} from './samsung/samsung.component';
 import {WhirlpoolComponent} from './whirlpool/whirlpool.component';
 import {ZanussiComponent} from './zanussi/zanussi.component';
+import {HeaderComponent} from './layouts/header/header.component';
 
 
 const routes: Routes = [
+{path:'headeronly',component:HeaderComponent},
 {path:'',component:LandingPageComponent},
 {path:'maintainance',component:MaintainanceServicesComponent},
 {path:'kelvinator',component:KelvinatorComponent},

@@ -10,6 +10,7 @@ export class SamsungComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
 
 }

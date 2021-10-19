@@ -22,6 +22,13 @@ import { WhirlpoolComponent } from './whirlpool/whirlpool.component';
 import { AristonComponent } from './ariston/ariston.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ZanussiComponent } from './zanussi/zanussi.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+// import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateService} from '@ngx-translate/core';
+
+
 
 @NgModule({
   declarations: [
@@ -48,9 +55,29 @@ import { ZanussiComponent } from './zanussi/zanussi.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: createTranslateLoader,
+          deps: [HttpClient]
+      },
+      defaultLanguage: 'en'
+  })
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
+
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http,'./assets/i18n/', '.json');
+}
+
+
+// export function createTranslateLoader(http:HttpClient) {
+//   return new TranslateHttpLoader(http,'./assets/i18n/','.json');
+// }

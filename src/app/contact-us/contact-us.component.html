@@ -1,6 +1,7 @@
+
 <div class="image-container">
 
-  <h1 class="text-center">CONTACT US</h1>
+  <h1 class="text-center" >{{"contactUs" | translate}}</h1>
   <img
     src="../../assets/automotive assets/contact us/Mask Group 1.png"
     class="img-fluid"
@@ -12,39 +13,113 @@
 
 
 <div class="d-flex justify-content-center" style="display:block;">
-  <div id="background-text">CONTACT</div>
+  <div id="background-text" >{{"contact" | translate}}</div>
   <img src="../../assets/automotive assets/Line 1.png" class="mt-3" style="width:19%" alt="">
 </div>
-<p class="text-center head" style="font-weight: 800;font-size: 39px;"> CONTACT US </p>
+<p class="text-center head" style="font-weight: 800;font-size: 39px;" > {{"contactUs" |translate}} </p>
 
 
 
 <div class="container">
   <div class="row">
-    <div class="col-4 location">
+    <div class="col-12 col-lg-4 col-md-4 col-sm-12 location">
       <img src="../../assets/automotive assets/contact us/Icon awesome-location-arrow.png" class="mt-3" style="width:8%" alt="">
-      <p class="location-text">Location</p>
-      <p class="text-center">
+      <p class="location-text" i18n='locationHead'>{{"locationHead" | translate}}</p>
+      <p class="text-center" >
         P.O.Box 1043, Postal Code: 130 Azaiba,
         Sultanate of Oman
       </p>
     </div>
 
-    <div class="col-4 location">
+    <div class="col-12 col-lg-4 col-md-4 col-sm-12 location">
       <img src="../../assets/automotive assets/contact us/Icon feather-phone-call.png" class="mt-3" style="width:8%" alt="">
-      <p class="location-text">Phones</p>
-      <p class="text-center">
+      <p class="location-text" i18n='telephoneHead'>{{"telephoneHead" | translate}}</p>
+      <p class="text-center" i18n='telephone'>
         Phone  :+968 2428 9922<br>
-        Fax       : +968 2428 8566
+        Fax : +968 2428 8566
       </p>
     </div>
 
-    <div class="col-4 location">
+    <div class="col-12 col-lg-4 col-md-4 col-sm-12 location">
       <img src="../../assets/automotive assets/contact us/Icon material-email.png" class="mt-3" style="width:8%" alt="">
-      <p class="location-text">Email</p>
-      <p class="text-center">
+      <p class="location-text" >{{"mailHead" | translate}}</p>
+      <p class="text-center" i18n='mail'>
         info@sjabedalsulaimi.com
       </p>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+  <!--The div element for the map -->
+<div id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29248.677039242015!2d58.3515513816449!3d23.601297618421217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e0002fee32d27%3A0x10f206c3d9600042!2sAzaiba%2C%20Muscat%2C%20Oman!5e0!3m2!1sen!2seg!4v1633473991574!5m2!1sen!2seg" width="98%" height="100%" style="border:0;margin:auto;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+</div>
+
+
+<div class="d-flex justify-content-center" style="display:block;">
+  <div id="background-text" i18n='contact'>CONTACT</div>
+  <img src="../../assets/automotive assets/Line 1.png" class="mt-3" style="width:19%" alt="">
+</div>
+<p class="text-center head" style="font-weight: 800;font-size: 39px;" i18n='sendMessage'> SEND US A MESSAGE </p>
+
+<div class="container" >
+
+    <div class="row d-flex justify-content-between">
+
+    <div class="col-12 col-lg-6 col-md-6 col-sm-12 info-container">
+        <div class="form-group">
+
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Booking Start Date">
+        </div>
+    </div>
+
+
+    <div class=" col-12 col-lg-6 col-md-6 col-sm-12 info-container">
+        <div class="form-group">
+
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mobile Number">
+        </div>
+        <div class="form-group">
+
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Booking End Date">
+        </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="container" >
+
+  <div class="row d-flex justify-content-center" style="width:93%;margin-bottom:2%">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 message">
+
+      <input type="email" class="form-control" id="exampleInputEmail1"
+      style="width: 100%;"aria-describedby="emailHelp" placeholder="Message"
+      >
+
+    </div>
+  </div>
+
+  <div class=" d-flex justify-content-center see-more" >
+    <button class="btn btn-primary shadow mb-3 " i18n='send Message button'>
+      SEND
+    </button>
+  </div>
+
+</div>
+
+
+
+
+<app-footer></app-footer>

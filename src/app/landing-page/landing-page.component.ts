@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {TranslateService} from '@ngx-translate/core';
 
 
 @Component({
@@ -7,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
 })
+
+
+
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  images = true;
+
+   isActive:boolean=false;
+  constructor() {
+
+}
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
+
 
 }

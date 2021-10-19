@@ -55,6 +55,65 @@
   color: #1d1f21;
 }
 
+
+/*map*/
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+
+  display:flex;
+  justify-content:center;
+  margin-bottom:10%;
+}
+
+.form-group input{
+  opacity: 0.5;
+  border-radius: 11px;
+  border: solid 1px #707070;
+  background-color: #fff;
+  font-family: OpenSans;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1d1f21;
+}
+
+.message input{
+  opacity: 0.5;
+  border-radius: 11px;
+  border: solid 1px #707070;
+  background-color: #fff;
+  font-family: OpenSans;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 3.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1d1f21;
+  height:fit-content;
+}
+
+.info-container{
+  width:50%;
+
+}
+
+.form-group{
+  width: 80%;
+}
+
+.see-more button{
+  width: 12%;
+  margin-bottom:10%
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .image-container h1{
@@ -73,3 +132,61 @@
     font-size: 30px !important;
   }
 }
+
+
+
+@media (min-width: 540px) and (max-width: 768px){
+
+  .image-container h1{
+    font-size: 21px;
+  }
+
+  #background-text{
+    font-size: 2.2rem;
+  }
+
+  #background-text{
+    font-size: 2.2rem;
+  }
+  .head{
+    font-size: 26px !important;
+  }
+
+  .location .location-text{
+    font-size: 20px;
+  }
+
+  .location img{
+    width:6% !important;
+  }
+}
+
+
+
+
+@media (min-width: 280px) and (max-width: 540px){
+
+  .image-container h1{
+    font-size: 18px;
+  }
+
+  #background-text{
+    font-size: 1.2rem;
+    line-height: 29px;
+  }
+
+  .see-more .rounded{
+    width: 48% !important;
+
+  }
+
+  .head{
+    font-size: 21px !important;
+  }
+
+}
+
+
+
+
+

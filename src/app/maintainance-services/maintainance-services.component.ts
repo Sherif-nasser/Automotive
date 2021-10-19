@@ -1,5 +1,5 @@
 import { HostListener,Component, OnInit } from '@angular/core';
-
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-maintainance-services',
@@ -7,44 +7,31 @@ import { HostListener,Component, OnInit } from '@angular/core';
   styleUrls: ['./maintainance-services.component.css']
 })
 export class MaintainanceServicesComponent implements OnInit {
- 
+
+
 
   currentClasses: Record<string, boolean> = {};
-  isRotated : boolean =false;
 
+  isRotated : boolean =false;
+  rotated :boolean = false;
 
   constructor() {
-       
-  }
+  
+}
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
 
 /**
  * name
  */
-public rotation() {
+rotation(){
+  // this.isRotated = !this.isRotated;
+  this.isRotated = !this.isRotated;
+  
+}
 
 
 }
- 
-//union types
-  // let mixesArray : (string|number|boolean) [] = ['sherif', 1, false];  
-  // console.log(mixesArray[2]);
-  // let object = string|number|boolean; without the prentheses
 
-//objects 
-
-  //  let variable : object;
-
-  //   variable = {
-  //     name: string,
-  //     number: number,
-  //     isEducated : boolean
-  //   };
-  //   variable = {name:'sherif', number:20 , isEducated:true};
-  //   console.log(variable.name + ' is '+ variable.age +' years old '+ variable.isEducated);
-
- 
-
-}

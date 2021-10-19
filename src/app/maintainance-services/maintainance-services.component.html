@@ -16,62 +16,84 @@
 
   <div class="d-flex justify-content-center" style="display:block;">
 
+    <div class="hamburger d-flex justify-content-start">
+
+      <img src="../../assets/automotive assets/maintenance services/Ellipse 41.png" class="mt-3" style="width:19%" alt="">
+
+      <img
+      src="../../assets/automotive assets/hamburger-menu-462145.png"
+      class=" mt-3"
+      style="width:8%;position: absolute;margin-top:auto;top: 18%;left:5.5%;"
+      alt=""
+      [ngClass]="isRotated ? 'active' : 'active2'"
+
+      (click)= "rotation()"
+      >
+
+  </div>
+
+  <div class="hiddenInformation"  [ngClass]="isRotated ? 'showInfo' : ''" (click)= "rotation()">
+
+    <div class="firstNumber">
+    <p style="display:none; position: absolute;left:4rem;top:4%"></p>
     <img
-    src="../../assets/automotive assets/hamburger-menu-462145.png"
-    class="hamburger mt-3"
-    style="width:8%"
-    alt=""
-    [ngClass]="{'active': isRotated === true}"
+    src="../../assets/automotive assets/landing page/Rectangle 140.png"
+    class=""
+    style="border-radius:50%;"
+    alt="info"
     >
+  </div>
 
-<button class="clickRotation" (click) = "rotation()"> click me </button>
+  <div class="secondNumber">
+    <p style="display:none; position: absolute;"></p>
+    <img
+    src="../../assets/automotive assets/landing page/Rectangle 140.png"
+    class=""
+    alt="info"
+    >
+  </div>
+</div>
 
-    <div id="background-text">SERVICES</div>
+
+    <div id="background-text" i18n='services'>{{"services" | translate}}</div>
     <img src="../../assets/automotive assets/Line 1.png" class="mt-3" style="width:19%" alt="">
   </div>
-  <p class="text-center head" style="font-weight: 800;font-size: 39px;"> MAINTENANCE  SERVICES </p>
+  <p class="text-center head" style="font-weight: 800;font-size: 39px;" i18n='maintainance services'> {{"maintainance services"|translate}} </p>
 
 
   <div class="container">
     <div class="row product-container">
       <img src="../../assets/automotive assets/maintenance services/Group 38.png" class="mt-3" style="width:19%" alt="">
-      <div class="discreption">
-        <h3>FRIDGE</h3>
+      <div class="discreption col-12 col-lg-9 col-md-9 col-sm-12">
+        <h3 >{{"fridge"|translate}}</h3>
         <p>
-          We maintain all types of fridge malfunctions including engine malfunctions, ice formation and
-          replace any worn out parts with new original ones. Our engineers will also provide you with all
-          the essential precautions for better future use.
+          {{"fridgeDescription" | translate}}
         </p>
       </div>
     </div>
 
 
     <div class="row product-container">
+      <img src="../../assets/automotive assets/maintenance services/Group 39.png" class="mt-3 smallImg" style="width:19%;display: none;" alt="">
 
-      <div class="discreption">
-        <h3>WASHER</h3>
+      <div class="discreption col-12 col-lg-9 col-md-9 col-sm-12">
+
+        <h3>{{"washer"|translate}}</h3>
         <p>
-          Westinghouse is an American institution of appliances, founded in 1886, and it is one
-          of the market leaders in the development of electrical infrastructure for all kinds of
-          household appliances, including refrigerators, stoves, dryers, deep freezers, ovens, and
-          others all over the world. Automotive Electric has obtained Westinghouse maintenance
-          authorization 30 years ago
+          {{"washerDescription" | translate}}
         </p>
       </div>
-      <img src="../../assets/automotive assets/maintenance services/Group 39.png" class="mt-3" style="width:19%" alt="">
+      <img src="../../assets/automotive assets/maintenance services/Group 39.png" class="mt-3 largImg" style="width:19%" alt="">
     </div>
 
 
     <div class="row product-container">
       <img src="../../assets/automotive assets/maintenance services/Group 40.png" class="mt-3" style="width:19%" alt="">
 
-      <div class="discreption">
-        <h3>WASHING MACHINE</h3>
-        <p>
-          Our team maintains all types of washing machines including automatic, full automatic
-          washing machines and also dishwashers. We have a technique that suits each and every
-          situation including engine malfunctions, leaking soap drawers, spinning and water leakage
-          malfunctions.
+      <div class="discreption col-12 col-lg-9 col-md-9 col-sm-12">
+        <h3 >{{"washing machine" | translate}}</h3>
+        <p >
+          {{"washingMachineDescription" | translate}}
         </p>
       </div>
 
@@ -82,16 +104,14 @@
 
 
     <div class="row product-container">
-
-      <div class="discreption">
-        <h3>DEEP FREEZER</h3>
-        <p>
-          We maintain all freezer malfunctions including defrosting, water leakage, excessive ice
-          formation, engine and processing malfunctions; also our team is always ready to answer
-          any questions in regard to future use or malfunctions troubleshooting.
+      <img src="../../assets/automotive assets/maintenance services/Group 41.png" class="mt-3 smallImg" style="width:19%;display: none;" alt="">
+      <div class="discreption col-12 col-lg-9 col-md-9 col-sm-12">
+        <h3>{{"deepfreezer" | translate}}</h3>
+        <p >
+          {{"deepfreezerDescription" | translate}}
         </p>
       </div>
-      <img src="../../assets/automotive assets/maintenance services/Group 41.png" class="mt-3" style="width:19%" alt="">
+      <img src="../../assets/automotive assets/maintenance services/Group 41.png" class="mt-3 largImg" style="width:19%" alt="">
     </div>
 
 
@@ -99,11 +119,10 @@
     <div class="row product-container">
       <img src="../../assets/automotive assets/maintenance services/Group 42.png" class="mt-3" style="width:19%" alt="">
 
-      <div class="discreption">
-        <h3>MICROWAVE</h3>
-        <p>
-          We also maintain microwave’s malfunction including insufficient heating, broken diodes and
-          faulty door switches.
+      <div class="discreption col-12 col-lg-9 col-md-9 col-sm-12">
+        <h3 >{{"microwave" | translate}}</h3>
+        <p i18n='MicrowaveDescription'>
+          {{"MicrowaveDescription" | translate}}
         </p>
       </div>
 
@@ -112,16 +131,16 @@
 
 
     <div class="row product-container">
+      <img src="../../assets/automotive assets/maintenance services/Group 43.png" class="mt-3 smallImg" style="width:19%;display: none;" alt="">
 
-      <div class="discreption">
-        <h3>DRYER</h3>
-        <p>
-          We maintain dryers’ malfunctions including thermostat, heating and engine malfunctions.
-          Our team will also provide with all the needed precautions and are always ready to
-          answer any questions and support.
+      <div class="discreption col-12 col-lg-9 col-md-9 col-sm-12">
+
+        <h3 >{{"dryer"|translate}}</h3>
+        <p >
+          {{"dryerDescription"|translate}}
         </p>
       </div>
-      <img src="../../assets/automotive assets/maintenance services/Group 43.png" class="mt-3" style="width:19%" alt="">
+      <img src="../../assets/automotive assets/maintenance services/Group 43.png" class="mt-3 largImg" style="width:19%" alt="">
     </div>
 
   </div>
