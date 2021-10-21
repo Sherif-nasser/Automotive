@@ -27,6 +27,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 // import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateService} from '@ngx-translate/core';
+import { InformationComponent } from './information/information.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -50,9 +52,11 @@ import {TranslateService} from '@ngx-translate/core';
     WhirlpoolComponent,
     AristonComponent,
     AboutUsComponent,
-    ZanussiComponent
+    ZanussiComponent,
+    InformationComponent
   ],
   imports: [
+    FontAwesomeModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
@@ -64,11 +68,12 @@ import {TranslateService} from '@ngx-translate/core';
           deps: [HttpClient]
       },
       defaultLanguage: 'en'
-  })
+  }),
+    
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
 

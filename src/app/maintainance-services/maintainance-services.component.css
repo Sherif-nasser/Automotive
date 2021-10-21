@@ -49,40 +49,18 @@
   font-size: 20px;
 }
 
-.hamburger{
-  position: absolute;
-  left: 0;
-  margin-left:2px;
-  width: 40%;
-}
-
-.hiddenInformation{
-  display:flex;
-  flex-direction: column;
-
-  position: absolute;
-  left: 100px;
-  height: 50%;
-  width:0%;
-}
-
-.showInfo{
-  width:61%;
-  visibility:visible;
-  transition: width 0.5s;
-}
-
-.showInfo  p{
-  width:61%;
-  display:block !important;
-  transition: width 0.5s;
-}
+/*hidden info and hamburger*/
 
 
 
-.hiddenInformation img{
-  width:18%;
-}
+/**/
+
+
+
+
+
+
+/*END hidden info and hamburger*/
 
 .active{
   transform: rotate(1deg); /* Equal to rotateZ(45deg) */
@@ -112,6 +90,11 @@
   #background-text{
     font-size: 2.2rem;
   }
+
+  .head{
+    font-size: 26px !important;
+  }
+
 
   .smallImg{
     display:block !important;
@@ -145,6 +128,8 @@
   .product-container{
     justify-content: center;
   }
+
+
 }
 
 
@@ -158,6 +143,8 @@
   .head{
     font-size: 21px !important;
   }
+
+
 
   .smallImg{
     display:block !important;

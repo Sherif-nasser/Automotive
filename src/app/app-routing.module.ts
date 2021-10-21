@@ -17,10 +17,12 @@ import {SamsungComponent} from './samsung/samsung.component';
 import {WhirlpoolComponent} from './whirlpool/whirlpool.component';
 import {ZanussiComponent} from './zanussi/zanussi.component';
 import {HeaderComponent} from './layouts/header/header.component';
+import {InformationComponent} from './information/information.component';
 
 
 const routes: Routes = [
 {path:'headeronly',component:HeaderComponent},
+{path:'infor',component:InformationComponent},
 {path:'',component:LandingPageComponent},
 {path:'maintainance',component:MaintainanceServicesComponent},
 {path:'kelvinator',component:KelvinatorComponent},

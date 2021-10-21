@@ -1,0 +1,142 @@
+
+
+.active{
+transform: rotate(1deg); /* Equal to rotateZ(45deg) */
+transition-duration: 0.4s;
+}
+
+.active2{
+transform: rotate(-180deg); /* Equal to rotateZ(45deg) */
+transition-duration: 0.4s;
+}
+
+
+.burger{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0% !important;
+}
+
+.burger img{
+ width: 100%;
+ height: 100%;
+ margin: auto;
+}
+.burger button{
+  position: absolute;
+  top: 21%;
+  left: 32%;
+  text-align: center;
+  font-size: 33px;
+ }
+
+ /*******************************************************************/
+
+ .information{
+   display: flex;
+  
+   flex-direction: column;
+   padding: 0% !important;
+   opacity: 0;
+   visibility:hidden;
+ }
+ .infoFirst{
+   align-items: center;
+   justify-content: center;
+   position: relative;
+ }
+
+ .infoSecond{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+ .infoFirst img{
+   width: 100%;
+   height: 100%;
+   padding:0% !important;
+ }
+
+
+.infoSecond img{
+  width: 100%;
+  height: 100%;
+  padding:0% !important;
+}
+
+
+.centered{
+  position: absolute;
+  top: 21%;
+  left: 29%;
+  color: white;
+}
+ .showInfo{
+  opacity: 50;
+  visibility:visible;
+  transition: opacity 0.5s;
+}
+
+
+@media   (min-width: 280px) and (max-width: 540px){
+  .centered{
+    font-size:10px !important;
+  }
+
+  .burger button{
+    font-size: 19px;
+    left:24%;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 720px){
+  .container-fluid{
+    width: 77%;
+    margin-left: 2%;
+  }
+  .centered{
+    font-size:14px !important;
+  }
+
+  .burger button{
+    font-size: 35px;
+    left:24%;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 960px){
+  .container-fluid{
+    width: 55%;
+    margin-left: 2%;
+  }
+  .burger button{
+    font-size: 26px;
+    left:28%;
+    top: 25%;
+  }
+}
+@media (min-width: 960px) and (max-width: 1140px){
+  .container-fluid{
+    width: 42%;
+    margin-left: 2%;
+  }
+  .burger button{
+    font-size: 26px;
+    left:28%;
+    top: 25%;
+  }
+  .centered{
+    font-size:15px !important;
+  }
+}
+@media (min-width: 1140px) {
+  .container-fluid{
+    width: 25%;
+    margin-left: 2%;
+  }
+  .burger button{
+    left:25%;
+  }
+}
