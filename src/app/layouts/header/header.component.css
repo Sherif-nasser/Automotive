@@ -52,6 +52,10 @@
     margin-left:2% !important;
   }
 
+  .navbar-collapse ul button{
+    margin-left:2% !important;
+  }
+
   .navbar-collapse ul li a:hover{
     color:	rgba(20.4, 22.7, 25.1);
   }
@@ -71,6 +75,9 @@
     font-family: 'Open Sans', sans-serif;
     margin-left:2% !important;
   }
+  .navbar-collapse ul button{
+    margin-left:2% !important;
+  }
 
   .navbar-collapse ul li a:hover{
     color:	rgba(20.4, 22.7, 25.1);
@@ -88,6 +95,9 @@
     color: white;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
+    margin-left:2% !important;
+  }
+  .navbar-collapse ul button{
     margin-left:2% !important;
   }
 
