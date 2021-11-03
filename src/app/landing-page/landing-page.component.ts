@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 
 
@@ -11,13 +12,13 @@ import {TranslateService} from '@ngx-translate/core';
 
 
 export class LandingPageComponent implements OnInit {
-
   images = true;
+  isActive:boolean=false;
+ 
 
-   isActive:boolean=false;
   constructor() {
-
-}
+   
+  }
 
   ngOnInit(): void {
     window.scrollTo(0,0);
